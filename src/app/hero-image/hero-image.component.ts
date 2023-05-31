@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'hero-image',
+  selector: 'app-hero-image',
   templateUrl: './hero-image.component.html',
-  styleUrls: ['./hero-image.component.css']
+  styleUrls: ['./hero-image.component.css'],
 })
-export class HeroImageComponent {
-
-}
+export class HeroImageComponent {}

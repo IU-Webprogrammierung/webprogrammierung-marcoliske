@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'commercial',
+  selector: 'app-commercial',
   templateUrl: './commercial.component.html',
-  styleUrls: ['./commercial.component.css']
+  styleUrls: ['./commercial.component.css'],
 })
-export class CommercialComponent {
-
-}
+export class CommercialComponent {}
