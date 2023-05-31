@@ -1,0 +1,23 @@
+.grid-container {
+  max-height: 600px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: aquamarine;
+}
+
+.grid-item {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item > img {
+  width: 60%;
+}
+
+.grid-item.text {
+  display: flex;
+  justify-content: start;
+  font-size: xx-large;
+}
