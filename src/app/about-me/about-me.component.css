@@ -1,5 +1,4 @@
 .grid-container {
-  max-height: 650px;
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
@@ -8,17 +7,14 @@
 
 .grid-item {
   margin: 1rem;
-  max-height: 600px;
   display: flex;
   justify-content: center;
 }
 
 .grid-item > img {
-  max-width: 30%;
+  max-height: 600px;
 }
 
 .grid-item.text {
-  display: flex;
-  justify-content: start;
-  font-size: xx-large;
+  display: block;
 }

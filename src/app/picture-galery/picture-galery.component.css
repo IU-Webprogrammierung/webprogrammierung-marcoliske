@@ -1,7 +1,14 @@
-.grid-container {
+.grid-container1 {
   max-height: 850px;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr 2fr;
+  background-color: aquamarine;
+}
+
+.grid-container2 {
+  max-height: 850px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
   background-color: aquamarine;
 }
 
