@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: aquamarine;
+}
+
+.grid-container-text {
+  margin: 1rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+}
+
+.grid-item.image {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.grid-item > img {
+  max-height: 600px;
+}
+
+.grid-item.address {
+  display: block;
+}
+
+.grid-item.formular {
+  display: grid;
+  max-width: 400px;
+}
