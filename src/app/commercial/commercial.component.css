@@ -25,3 +25,9 @@
 .body {
   height: 300px;
 }
+
+.callToAction {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
