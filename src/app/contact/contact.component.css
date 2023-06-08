@@ -18,6 +18,18 @@
   justify-content: flex-end;
 }
 
+.grid-item.header {
+  margin-bottom: 2rem;
+}
+
+.grid-item.address {
+  margin-bottom: 2rem;
+}
+
+.grid-item.formular > .input {
+  margin-bottom: 1rem;
+}
+
 .grid-item > img {
   max-height: 600px;
 }
