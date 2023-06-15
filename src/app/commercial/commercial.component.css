@@ -13,17 +13,20 @@
   display: grid;
   grid-template-rows: repeat(2, auto);
   gap: 10px;
-  background-color: aquamarine;
+  background-color: none;
   padding: 10px;
 }
 
 .header {
   text-align: center;
   height: 50px;
+  border: 1px black solid;
 }
 
 .body {
   height: 300px;
+  border: 1px black solid;
+  padding: 2rem;
 }
 
 .callToAction {

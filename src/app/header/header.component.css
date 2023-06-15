@@ -3,7 +3,7 @@
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(6, 150px);
-  background-color: aquamarine;
+  background-color: none;
   border-bottom: 2px solid grey;
   justify-content: center;
 }

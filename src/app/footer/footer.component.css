@@ -2,9 +2,10 @@
   display: grid;
   column-gap: 20px;
   grid-template-rows: repeat(2, 1fr);
-  background-color: aquamarine;
-
+  background-color: none;
+  border-top: 2px solid grey;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .grid-container {
@@ -12,7 +13,7 @@
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(2, 150px);
-  background-color: aquamarine;
+  background-color: none;
 
   justify-content: center;
 }
