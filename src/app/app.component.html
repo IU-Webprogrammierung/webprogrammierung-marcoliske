@@ -1,7 +1,7 @@
-<app-header></app-header>
+<app-header (scrollViewEvent)="scrollView($event)"></app-header>
 <app-hero-image></app-hero-image>
-<app-about-me></app-about-me>
-<app-picture-galery></app-picture-galery>
-<app-commercial></app-commercial>
-<app-contact></app-contact>
+<app-about-me [id]="destination.ABOUT_ME"></app-about-me>
+<app-picture-galery [id]="destination.PICTURE_GALERY"></app-picture-galery>
+<app-commercial [id]="destination.COMMERCIAL"></app-commercial>
+<app-contact [id]="destination.CONTACT"></app-contact>
 <app-footer></app-footer>

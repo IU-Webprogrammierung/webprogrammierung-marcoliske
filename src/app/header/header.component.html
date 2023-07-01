@@ -1,8 +1,18 @@
 <div class="grid-container">
-  <div class="grid-item">Willkommen</div>
-  <div class="grid-item">Über mich</div>
-  <div class="grid-item">Bilder</div>
-  <div class="grid-item">Pakete</div>
-  <div class="grid-item">Kontakt</div>
+  <div class="grid-item">
+    <button (click)="scrollView(destination.TOP)">Willkommen</button>
+  </div>
+  <div class="grid-item">
+    <button (click)="scrollView(destination.ABOUT_ME)">Über mich</button>
+  </div>
+  <div class="grid-item">
+    <button (click)="scrollView(destination.PICTURE_GALERY)">Bilder</button>
+  </div>
+  <div class="grid-item">
+    <button (click)="scrollView(destination.COMMERCIAL)">Pakete</button>
+  </div>
+  <div class="grid-item">
+    <button (click)="scrollView(destination.CONTACT)">Kontakt</button>
+  </div>
   <div class="grid-item">Logo</div>
 </div>
