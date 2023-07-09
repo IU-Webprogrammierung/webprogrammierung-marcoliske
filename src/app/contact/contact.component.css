@@ -53,3 +53,35 @@ input {
   width: 350px;
   height: 30px;
 }
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    display: block;
+    column-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: none;
+  }
+  .grid-item.image {
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-container-text {
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container-text {
+    margin: 0rem 1rem 0rem 1rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+  }
+
+  .grid-item.address {
+    margin-top: 2rem;
+  }
+}

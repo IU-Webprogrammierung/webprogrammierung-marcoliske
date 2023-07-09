@@ -66,3 +66,11 @@ a:hover {
 a:hover {
   color: #125699;
 }
+
+@media screen and (max-width: 992px) {
+  p,
+  span,
+  li {
+    font-size: 18px;
+  }
+}

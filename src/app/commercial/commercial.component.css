@@ -45,3 +45,19 @@
 ul {
   padding: 0;
 }
+
+@media screen and (max-width: 992px) {
+  .grid-container-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+    overflow-x: scroll;
+  }
+
+  .body {
+    max-height: 500px;
+    border: 1px black solid;
+    padding: 2rem;
+    line-height: 2rem;
+  }
+}
