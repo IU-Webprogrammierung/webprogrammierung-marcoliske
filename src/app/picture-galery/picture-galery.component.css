@@ -3,11 +3,6 @@
   grid-template-rows: repeat(2, auto);
 }
 
-.root-title {
-  display: flex;
-  justify-content: center;
-}
-
 .grid-container1 {
   max-height: 850px;
   display: grid;

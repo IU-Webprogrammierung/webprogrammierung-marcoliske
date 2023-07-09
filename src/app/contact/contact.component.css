@@ -3,11 +3,6 @@
   grid-template-rows: repeat(2, auto);
 }
 
-.root-title {
-  display: flex;
-  justify-content: center;
-}
-
 .grid-container {
   display: grid;
   column-gap: 20px;
@@ -52,4 +47,9 @@
 .grid-item.formular {
   display: grid;
   max-width: 400px;
+}
+
+input {
+  width: 350px;
+  height: 30px;
 }
