@@ -11,7 +11,22 @@ export class HeaderComponent {
 
   destination = Destination;
 
+  burgerMenuToggle = false;
+
   scrollView(targetDestination: Destination): void {
     this.scrollViewEvent.emit(targetDestination);
+  }
+
+  setBurgerMenuToggle():string{
+    this.burgerMenuToggle = !this.burgerMenuToggle
+
+    console.log(this.burgerMenuToggle)
+
+    if(this.burgerMenuToggle){
+      return "burger-menu-open"
+    }else{
+      return "burger-menu-close"
+    }
+return ""
   }
 }
