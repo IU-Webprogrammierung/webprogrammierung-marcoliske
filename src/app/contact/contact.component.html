@@ -14,27 +14,28 @@
       </div>
       <div class="grid-item formular">
         <div class="input">
-          <p>Name eingeben:</p>
-          <input type="text" placeholder="Name" />
+          <label htmlFor="name">Name eingeben:</label>
+          <input pInputText type="text" placeholder="Name" />
         </div>
         <div class="input">
-          <p>Email Adresse eingeben:</p>
-          <input type="text" placeholder="Email Adresse" />
+          <label htmlFor="email">Email Adresse eingeben:</label>
+          <input pInputText type="text" placeholder="Email Adresse" />
         </div>
         <div class="input">
-          <p>Betreff eingeben:</p>
-          <input type="text" placeholder="Betreff" />
+          <label htmlFor="subject">Betreff eingeben:</label>
+          <input pInputText type="text" placeholder="Betreff" />
         </div>
         <div class="input">
           <p>Nachricht eingeben:</p>
           <textarea
+            pInputText
             rows="6"
             cols="40"
             placeholder="Deine Nachricht an mich"
           ></textarea>
         </div>
         <div class="grid-item actionButton">
-          <button>Send</button>
+          <p-button>Send</p-button>
         </div>
       </div>
     </div>
