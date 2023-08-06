@@ -1,19 +1,39 @@
 <div class="grid-container-menu">
-  <div class="grid-item-menu" (click)="scrollView(destination.TOP)">
+  <p-button
+    styleClass="p-button-text"
+    class="grid-item-menu"
+    (click)="scrollView(destination.TOP)"
+  >
     Willkommen
-  </div>
-  <div class="grid-item-menu" (click)="scrollView(destination.ABOUT_ME)">
+  </p-button>
+  <p-button
+    styleClass="p-button-text"
+    class="grid-item-menu"
+    (click)="scrollView(destination.ABOUT_ME)"
+  >
     Über mich
-  </div>
-  <div class="grid-item-menu" (click)="scrollView(destination.PICTURE_GALERY)">
+  </p-button>
+  <p-button
+    styleClass="p-button-text"
+    class="grid-item-menu"
+    (click)="scrollView(destination.PICTURE_GALERY)"
+  >
     Bilder
-  </div>
-  <div class="grid-item-menu" (click)="scrollView(destination.COMMERCIAL)">
+  </p-button>
+  <p-button
+    styleClass="p-button-text"
+    class="grid-item-menu"
+    (click)="scrollView(destination.COMMERCIAL)"
+  >
     Pakete
-  </div>
-  <div class="grid-item-menu" (click)="scrollView(destination.CONTACT)">
+  </p-button>
+  <p-button
+    styleClass="p-button-text"
+    class="grid-item-menu"
+    (click)="scrollView(destination.CONTACT)"
+  >
     Kontakt
-  </div>
+  </p-button>
   <div class="image"><img src="../../assets/marlimalist_shadow.svg" /></div>
 </div>
 
@@ -21,19 +41,25 @@
   <ul class="grid-item-burger-menu-icon">
     <img (click)="setBurgerMenuToggle()" src="../../assets/burger-menu.svg" />
   </ul>
+
   <ng-container *ngIf="this.burgerMenuToggle">
-    <ul class="">
-      <li><a (click)="scrollView(destination.TOP)">Willkommen</a></li>
-      <li>
-        <a (click)="scrollView(destination.ABOUT_ME)">Über mich</a>
-      </li>
-      <li>
-        <a (click)="scrollView(destination.PICTURE_GALERY)">Bilder</a>
-      </li>
-      <li>
-        <a (click)="scrollView(destination.COMMERCIAL)">Pakete</a>
-      </li>
-      <li><a (click)="scrollView(destination.CONTACT)">Kontakt</a></li>
-    </ul>
+    <p-button styleClass="p-button-link" (click)="scrollView(destination.TOP)"
+      >Willkommen</p-button
+    >
+    <p-button
+      styleClass="p-button-link"
+      (click)="scrollView(destination.ABOUT_ME)"
+      >Über mich</p-button
+    >
+    <p-button
+      styleClass="p-button-link"
+      (click)="scrollView(destination.PICTURE_GALERY)"
+      >Bilder</p-button
+    >
+    <p-button
+      styleClass="p-button-link"
+      (click)="scrollView(destination.CONTACT)"
+      >Kontakt</p-button
+    >
   </ng-container>
 </div>

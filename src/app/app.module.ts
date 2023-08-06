@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -22,16 +23,17 @@ import { InputTextModule } from 'primeng/inputtext';
     PictureGaleryComponent,
     CommercialComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    CardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -18,22 +18,25 @@
   display: grid;
   grid-template-rows: repeat(2, auto);
   gap: 10px;
-  background-color: none;
 }
 
 .header {
   height: 100px;
-  border: 1px black solid;
+
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .body-text {
   height: 400px;
-  border: 1px black solid;
+
+  border-radius: 5px;
   padding: 2rem;
   line-height: 2rem;
+  background-color: white;
 }
 
 .body-text.one {
@@ -70,7 +73,6 @@
 
 .body-image {
   height: 400px;
-  border: 1px black solid;
   line-height: 2rem;
 }
 

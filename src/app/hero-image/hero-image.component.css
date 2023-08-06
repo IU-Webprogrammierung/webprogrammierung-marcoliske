@@ -17,6 +17,7 @@ img {
   align-items: flex-end;
   padding: 1.25rem;
   flex-direction: column;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 992px) {
