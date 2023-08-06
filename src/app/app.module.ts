@@ -12,7 +12,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { CardModule } from 'primeng/card';
+import { CarouselModule } from 'primeng/carousel';
+import { LayoutState } from 'src/store/layout/layout.state';
+import { NgxsModule } from '@ngxs/store';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { CardModule } from 'primeng/card';
     BrowserAnimationsModule,
     ButtonModule,
     InputTextModule,
-    CardModule,
+    CarouselModule,
+    NgxsModule.forRoot([LayoutState]),
   ],
   providers: [],
   bootstrap: [AppComponent],
