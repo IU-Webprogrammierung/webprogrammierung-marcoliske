@@ -1,55 +1,17 @@
 <div class="grid-container-root">
   <div class="root-title"><h1>Bildergalerie</h1></div>
   <div>
-    <div class="grid-container1">
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-    </div>
-    <div class="grid-container2">
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-    </div>
-    <div class="grid-container1">
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="../../assets/hero-image.jpg" />
+    <div *ngIf="pictureSources !== undefined">
+      <div class="grid-container">
+        <ng-container *ngFor="let pictureSource of pictureSources">
+          <div class="grid-item">
+            <p-image
+              [src]="pictureSource.source"
+              [preview]="true"
+              height="220px"
+            ></p-image>
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>

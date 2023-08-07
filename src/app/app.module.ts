@@ -15,6 +15,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CarouselModule } from 'primeng/carousel';
 import { LayoutState } from 'src/store/layout/layout.state';
 import { NgxsModule } from '@ngxs/store';
+import { ImageModule } from 'primeng/image';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,8 +34,10 @@ import { NgxsModule } from '@ngxs/store';
     BrowserModule,
     BrowserAnimationsModule,
     ButtonModule,
-    InputTextModule,
     CarouselModule,
+    HttpClientModule,
+    ImageModule,
+    InputTextModule,
     NgxsModule.forRoot([LayoutState]),
   ],
   providers: [],
