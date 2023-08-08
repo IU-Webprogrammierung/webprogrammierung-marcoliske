@@ -6,7 +6,8 @@
         <ng-container *ngFor="let pictureSource of pictureSources">
           <div class="grid-item">
             <p-image
-              [src]="pictureSource.source"
+              class="imageGallery"
+              [src]="assetsSourceUrl + pictureSource.url"
               [preview]="true"
               height="220px"
             ></p-image>

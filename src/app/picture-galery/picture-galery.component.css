@@ -16,3 +16,7 @@
 .grid-item > img {
   max-width: 100%;
 }
+
+.imageGallery {
+  max-width: 330px;
+}

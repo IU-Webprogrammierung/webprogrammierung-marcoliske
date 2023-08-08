@@ -11,6 +11,7 @@ export class PictureGaleryComponent implements OnInit {
   constructor(private pictureService: PictureService) {}
 
   pictureSources: PictureSources[];
+  assetsSourceUrl = "../../assets"
 
   async ngOnInit(): Promise<void> {
     this.pictureSources = await this.pictureService.fetchPictureSources();

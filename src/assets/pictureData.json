@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
-    "source": "../../assets/hero-image.jpg"
+    "url": "/hero-image.jpg"
   },
   {
     "id": 2,
-    "source": "../../assets/scooter.jpg"
+    "url": "/scooter.jpg"
   },
   {
     "id": 3,
-    "source": "../../assets/scooter.jpg"
+    "url": "/gull.jpg"
   },
   {
     "id": 4,
-    "source": "../../assets/scooter.jpg"
+    "url": "/sculpture.jpg"
   },
   {
     "id": 5,
-    "source": "../../assets/scooter.jpg"
+    "url": "/lake.jpg"
   },
   {
     "id": 6,
-    "source": "../../assets/scooter.jpg"
+    "url": "/lake2.jpg"
+  },
+  {
+    "id": 7,
+    "url": "/architecture.jpg"
+  },
+  {
+    "id": 8,
+    "url": "/car.jpg"
+  },
+  {
+    "id": 9,
+    "url": "/sunset.jpg"
   }
 ]
