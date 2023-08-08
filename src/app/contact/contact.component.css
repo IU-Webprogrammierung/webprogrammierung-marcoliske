@@ -49,6 +49,11 @@
   max-width: 400px;
 }
 
+.error {
+  font-style: italic;
+  color: red;
+}
+
 input {
   width: 350px;
 }

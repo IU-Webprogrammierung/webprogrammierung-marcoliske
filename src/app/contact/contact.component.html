@@ -34,6 +34,7 @@
             />
             <p
               *ngIf="form['emailAddress'].dirty && form['emailAddress'].errors"
+              class="error"
             >
               Bitte gültige Emailadresse eingeben
             </p>
@@ -59,7 +60,7 @@
           </div>
 
           <div class="input" *ngIf="checkFormValide()">
-            <small>* Pflichtfeld. Bitte ausfüllen</small>
+            <small class="error">* Pflichtfeld. Bitte ausfüllen</small>
           </div>
           <div class="grid-item actionButton">
             <button
