@@ -18,6 +18,8 @@ import { NgxsModule } from '@ngxs/store';
 import { ImageModule } from 'primeng/image';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleriaModule } from 'primeng/galleria';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -36,10 +38,13 @@ import { GalleriaModule } from 'primeng/galleria';
     BrowserAnimationsModule,
     ButtonModule,
     CarouselModule,
+    FormsModule,
     GalleriaModule,
     HttpClientModule,
     ImageModule,
     InputTextModule,
+    ReactiveFormsModule,
+    ToastModule,
     NgxsModule.forRoot([LayoutState]),
   ],
   providers: [],
