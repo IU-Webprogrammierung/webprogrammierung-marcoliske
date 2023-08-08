@@ -17,6 +17,7 @@ import { LayoutState } from 'src/store/layout/layout.state';
 import { NgxsModule } from '@ngxs/store';
 import { ImageModule } from 'primeng/image';
 import { HttpClientModule } from '@angular/common/http';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ButtonModule,
     CarouselModule,
+    GalleriaModule,
     HttpClientModule,
     ImageModule,
     InputTextModule,
