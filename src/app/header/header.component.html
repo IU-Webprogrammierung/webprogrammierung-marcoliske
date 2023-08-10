@@ -34,14 +34,18 @@
   >
     Kontakt
   </p-button>
-  <div class="image"><img src="../../assets/marlimalist_shadow.svg" /></div>
+  <img src="../../assets/marlimalist_shadow.svg" />
 </div>
 
 <div class="grid-container-burger-menu">
-  <ul class="grid-item-burger-menu-icon">
-    <img (click)="setBurgerMenuToggle()" src="../../assets/burger-menu.svg" />
-  </ul>
-
+  <div class="grid-burger-menu-icons">
+    <img
+      class="menu-icon"
+      (click)="setBurgerMenuToggle()"
+      src="../../assets/burger-menu.svg"
+    />
+    <img class="logo" src="../../assets/marlimalist_shadow.svg" />
+  </div>
   <ng-container *ngIf="this.burgerMenuToggle">
     <p-button styleClass="p-button-link" (click)="scrollView(destination.TOP)"
       >Willkommen</p-button

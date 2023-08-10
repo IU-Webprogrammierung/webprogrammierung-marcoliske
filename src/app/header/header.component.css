@@ -33,10 +33,29 @@ img {
   padding-left: 0px;
 }
 
-.grid-item-burger-menu-icon > img {
+.menu-icon {
   width: 36px;
   height: 36px;
   cursor: pointer;
+  margin-left: 2rem;
+  position: sticky;
+  margin-right: auto;
+}
+
+.grid-burger-menu-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.grid-burger-menu-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.grid-burger-menu-icons .logo {
+  width: 120px;
 }
 
 @media screen and (max-width: 992px) {
