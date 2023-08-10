@@ -1,9 +1,10 @@
+<p-toast></p-toast>
 <div class="grid-container-root">
   <div class="root-title"><h1>Schreib mir</h1></div>
 
   <div class="grid-container">
     <div class="grid-item image">
-      <img src="../../assets/me.JPG" alt="me" />
+      <img src="../../assets/me2.jpg" alt="me" />
     </div>
     <div class="grid-container-text">
       <div class="grid-item address">
@@ -13,29 +14,65 @@
         <p>email@domain.de</p>
       </div>
       <div class="grid-item formular">
-        <div class="input">
-          <p>Name eingeben:</p>
-          <input type="text" placeholder="Name" />
-        </div>
-        <div class="input">
-          <p>Email Adresse eingeben:</p>
-          <input type="text" placeholder="Email Adresse" />
-        </div>
-        <div class="input">
-          <p>Betreff eingeben:</p>
-          <input type="text" placeholder="Betreff" />
-        </div>
-        <div class="input">
-          <p>Nachricht eingeben:</p>
-          <textarea
-            rows="6"
-            cols="40"
-            placeholder="Deine Nachricht an mich"
-          ></textarea>
-        </div>
-        <div class="grid-item actionButton">
-          <button>Send</button>
-        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="submit()">
+          <div class="input">
+            <label htmlFor="name">Name eingeben:*</label>
+            <input
+              pInputText
+              type="text"
+              placeholder="Name"
+              formControlName="name"
+            />
+          </div>
+          <div class="input">
+            <label htmlFor="email">Email Adresse eingeben:*</label>
+            <input
+              pInputText
+              type="text"
+              placeholder="Email Adresse"
+              formControlName="emailAddress"
+            />
+            <p
+              *ngIf="form['emailAddress'].dirty && form['emailAddress'].errors"
+              class="error"
+            >
+              Bitte gültige Emailadresse eingeben
+            </p>
+          </div>
+          <div class="input">
+            <label htmlFor="subject">Betreff eingeben:*</label>
+            <input
+              pInputText
+              type="text"
+              placeholder="Betreff"
+              formControlName="subject"
+            />
+          </div>
+          <div class="input">
+            <p>Nachricht eingeben:*</p>
+            <textarea
+              pInputText
+              rows="6"
+              cols="34"
+              placeholder="Deine Nachricht an mich"
+              formControlName="msg"
+            ></textarea>
+          </div>
+
+          <div class="input" *ngIf="checkFormValide()">
+            <small class="error">* Pflichtfeld. Bitte ausfüllen</small>
+          </div>
+          <div class="grid-item actionButton">
+            <button
+              pButton
+              class="button"
+              [disabled]="checkFormValide()"
+              type="submit"
+            >
+              Senden
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

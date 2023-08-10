@@ -32,7 +32,7 @@
   margin-bottom: 2rem;
 }
 
-.grid-item.formular > .input {
+.input {
   margin-bottom: 1rem;
 }
 
@@ -49,9 +49,13 @@
   max-width: 400px;
 }
 
+.error {
+  font-style: italic;
+  color: red;
+}
+
 input {
   width: 350px;
-  height: 30px;
 }
 
 @media screen and (max-width: 992px) {
@@ -67,21 +71,20 @@ input {
     justify-content: center;
     align-items: center;
   }
-  .grid-container-text {
-    margin: 0rem 1rem 0rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .grid-container-text {
     margin: 0rem 1rem 0rem 1rem;
     display: grid;
     grid-template-rows: auto auto;
+    justify-content: center;
     align-content: center;
   }
 
   .grid-item.address {
     margin-top: 2rem;
+  }
+
+  .grid-item > img {
+    width: 300px;
   }
 }

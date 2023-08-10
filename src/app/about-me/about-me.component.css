@@ -37,4 +37,8 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: none;
   }
+
+  .grid-item > img {
+    width: 300px;
+  }
 }

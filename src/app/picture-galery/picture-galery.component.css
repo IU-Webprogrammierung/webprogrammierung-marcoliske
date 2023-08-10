@@ -3,26 +3,20 @@
   grid-template-rows: repeat(2, auto);
 }
 
-.grid-container1 {
-  max-height: 850px;
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr 2fr;
-  background-color: none;
-}
-
-.grid-container2 {
-  max-height: 850px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
-  background-color: none;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-item {
-  max-height: 800px;
   display: flex;
   justify-content: center;
 }
 
 .grid-item > img {
   max-width: 100%;
+}
+
+.imageGallery {
+  max-width: 330px;
 }
