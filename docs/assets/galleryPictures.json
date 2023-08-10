@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "url": "/gallery/hero-image.jpg"
+  },
+  {
+    "id": 2,
+    "url": "/gallery/scooter.jpg"
+  },
+  {
+    "id": 3,
+    "url": "/gallery/gull.jpg"
+  },
+  {
+    "id": 4,
+    "url": "/gallery/sculpture.jpg"
+  },
+  {
+    "id": 5,
+    "url": "/gallery/lake.jpg"
+  },
+  {
+    "id": 6,
+    "url": "/gallery/lake2.jpg"
+  },
+  {
+    "id": 7,
+    "url": "/gallery/architecture.jpg"
+  },
+  {
+    "id": 8,
+    "url": "/gallery/car.jpg"
+  },
+  {
+    "id": 9,
+    "url": "/gallery/sunset.jpg"
+  }
+]
